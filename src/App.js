@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Contributions from './components/Contributions';
+import ContributionDetail from './components/ContributionDetail';
 
 class App extends React.Component {
   state = {
@@ -253,6 +254,10 @@ class App extends React.Component {
               exact
               path="/"
               render={props => <Contributions {...props} data={data} />}
+            />
+            <Route
+              path="/contribution/:id"
+              render={props => <ContributionDetail {...props} data={data} />}
             />
             <Route path="/about" render={() => <h1>About</h1>} />
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Contribution from './Contribution';
+import ContributionListItem from './ContributionListItem';
 
 class Contributions extends React.PureComponent {
   render() {
@@ -8,7 +8,7 @@ class Contributions extends React.PureComponent {
       <div>
         <h1>Contributions</h1>
         {data.map(record => (
-          <Contribution key={record.id} data={record} />
+          <ContributionListItem key={record.id} data={record} />
         ))}
       </div>
     );
