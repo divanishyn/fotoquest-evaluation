@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Contributions from './components/Contributions';
 
 class App extends React.Component {
@@ -9,7 +10,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Contributions data={this.state.data} />
+        <Router>
+          <div>
+            <Route exact path="/" render={(props) => <Contributions {...props} data={this.state.data} />} />
+            <Route path="/about" render={() => <h1>About</h1> } />
+          </div> 
+        </Router>
       </div>
     )
   }
