@@ -7,8 +7,8 @@ class Contribution extends React.Component {
         return (
             <div>
                 <h2>Contribution {id}</h2>
-                {photos.map((photo) => (
-                    <img width='150' src={photo.url} />
+                {photos.map((photo, index) => (
+                    <img key={index} width="150" src={photo.url} alt="" />
                 ) )}
             </div>
         )
