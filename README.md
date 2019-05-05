@@ -1,3 +1,9 @@
+## About
+
+This app has been created with React, React Router, Material UI, Fetch API.
+
+Contributions table has sorting by ID/Date. After successful evaluation, when form is sent, app redirects back to the contributions list.
+
 ## Available Scripts
 
 ### `npm start`
