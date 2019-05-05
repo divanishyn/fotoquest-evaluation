@@ -26,7 +26,7 @@ class EnhancedTableHead extends React.PureComponent {
             >
               <Tooltip title="Sort" enterDelay={300}>
                 <TableSortLabel
-                  active={orderBy === row.id}
+                  active={!row.disableSorting && orderBy === row.id}
                   direction={order}
                   onClick={this.createSortHandler(row.id)}
                 >

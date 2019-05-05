@@ -57,19 +57,22 @@ const rows = [
   { id: 'id', numeric: true, label: 'ID' },
   { id: 'timestamp', numeric: false, label: 'Date' },
   {
-    id: 'location.lon',
+    id: 'location',
     numeric: false,
-    label: 'Coordinates'
+    label: 'Coordinates',
+    disableSorting: true
   },
   {
-    id: 'landobservations[0].landcover',
+    id: 'landobservations',
     numeric: false,
-    label: 'Landcover'
+    label: 'Landcover',
+    disableSorting: true
   },
   {
     id: 'landuse',
     numeric: false,
-    label: 'Landuse'
+    label: 'Landuse',
+    disableSorting: true
   }
 ];
 
